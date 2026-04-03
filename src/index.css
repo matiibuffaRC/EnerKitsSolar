@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.nunito {
+    font-family: "Nunito", sans-serif;
+}
+
+.pt-sans {
+    font-family: "PT Sans", sans-serif;
+}

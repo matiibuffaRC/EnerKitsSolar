@@ -26,3 +26,12 @@ export default App
 
 // Colores principales:
 // #E0F600 (Principal color)
+
+// Main section: 
+//  Menú para ver los diferentes servicios
+//  Proyectos a gran escala
+//  Proyectos completados
+//  Ventajas
+//  Porque elegirnos
+//  Contacto
+// Footer:

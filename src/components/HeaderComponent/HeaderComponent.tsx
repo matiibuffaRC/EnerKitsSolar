@@ -1,7 +1,6 @@
 // import React from 'react';
 import { useState } from 'react';
 import Logo from "../../assets/imgs/EnerkitsLogo.png"
-import CrossIcon from "../../assets/icons/crossIcon.svg";
 
 function HeaderComponent() {
 
@@ -28,10 +27,7 @@ function HeaderComponent() {
                         <span className={`absolute w-5 h-0.5 bg-current rounded-full transition-all duration-300 ease-in-out ${openMenuMobile  ? "-rotate-45 translate-y-0"  : "translate-y-1.5"} `}></span>
                     </button>
                     <nav className={`fixed w-72 h-screen top-0 left-0 border border-gray-500 bg-gray-900/90 backdrop-blur-md z-10 transition-transform duration-300 md:hidden ${openMenuMobile ? "-translate-x-0.5" : "-translate-x-[105%]"}`} >
-                        <div className='border-b border-gray-500 flex flex-row items-center justify-center p-7 relative'>
-                            <div className='absolute top-1 right-1' onClick={()=>{handleClickMenuMobile()}}>
-                                <img src={CrossIcon} alt="Cerrar menú" className='h-6 invert'/>
-                            </div>
+                        <div className='border-b border-gray-500 flex flex-row items-center justify-center p-7'>
                             <img src={Logo} alt="Enerkits logo" className='h-7'/>
                         </div>
                         <ul className='h-full flex flex-col items-start gap-4 p-5 text-[1.2rem]'>

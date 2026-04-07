@@ -8,6 +8,9 @@ function DataComponent() {
                     <h2 className="nunito text-xl md:text-2xl lg:text-4xl px-2">Nuestro objetivo es <span className="bg-[#E0F600] px-3 rounded-3xl text-black font-bold">simple</span></h2>
                     <h2 className="nunito text-xl md:text-2xl lg:text-4xl px-2">ayudarte a generar tu propia energía verde, <span className="text-[#E0F600]">reducir costo</span> y construir un futuro más <span className="text-[#E0F600]">sostenible y limpio.</span></h2>
                 </div>
+                <div>
+                    
+                </div>
             </section>
         </>
     )

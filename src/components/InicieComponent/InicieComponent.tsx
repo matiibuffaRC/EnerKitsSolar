@@ -3,7 +3,7 @@
 
 function InicieComponent() {
     return (
-        <div className="bg-[url('/bg-img-InicieComponent.jpeg')] bg-cover bg-center h-screen w-full relative flex flex-col items-center justify-center">
+        <section className="bg-[url('/bg-img-InicieComponent.jpeg')] bg-cover bg-center h-screen w-full relative flex flex-col items-center justify-center">
 
             {/* Overlay oscuro */}
             <div className="absolute inset-0 bg-black/30"></div>
@@ -24,7 +24,7 @@ function InicieComponent() {
                 </h3>
             </div>
             <div className="absolute bottom-0 left-0 w-full h-1/3 bg-linear-to-t from-black via-black/40 to-transparent"></div>
-        </div>
+        </section>
     )
 }
 

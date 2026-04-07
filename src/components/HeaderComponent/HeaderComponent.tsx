@@ -34,7 +34,7 @@ function HeaderComponent() {
                             <li>Inicio</li>
                             <li>Nosotros</li>
                             <li>Contacto</li>
-                            <li>Consulta gratis</li>
+                            <li className="text-[#E0F600] font-bold">Consulta gratis</li>
                         </ul>
                     </nav>
                     <div className={`absolute inset-0 h-screen w-full bg-black/50 z-0 transition-opacity duration-300 md:hidden ${!openMenuMobile ? "opacity-0 hidden" : "opacity-100"}`} onClick={()=>{handleClickMenuMobile()}}>

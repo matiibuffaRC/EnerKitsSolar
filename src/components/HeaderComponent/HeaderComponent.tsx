@@ -14,7 +14,7 @@ function HeaderComponent() {
 
     return (
         <div>
-            <div className="nunito text-[white] h-15 fixed left-1/2 -translate-x-1/2 w-full z-40 bg-white/10 backdrop-blur-lg border border-white/20 md:rounded-full md:w-175 md:top-5">
+            <div className="nunito text-[white] h-15 fixed left-1/2 -translate-x-1/2 w-full z-40 bg-white/10 backdrop-blur-lg border border-white/20 md:rounded-full md:w-175 md:top-3">
                 <div className="flex flex-row px-5 justify-between items-center h-full">
                     <div> {/* Parte del logo */}
                         <div>

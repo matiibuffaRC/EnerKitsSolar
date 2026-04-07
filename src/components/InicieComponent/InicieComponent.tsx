@@ -16,14 +16,14 @@ function InicieComponent() {
                 <h2 className="nunito text-4xl px-10 mb-2 md:text-5xl font-bold">
                     El sol trabaja para vos
                 </h2>
-                <h3 className="pt-sans text-sm px-4 md:text-md md:max-w-100">
+                <h3 className="pt-sans text-sm px-4 md:px-0 md:text-xl md:max-w-100">
                     Y nosotros también. Energía solar y asesoría experta para optimizar tu inversión en el futuro verde.
                 </h3>
-                <h3 className="nunito bg-[#E0F600] text-black px-4 py-1 mt-5 inline-block rounded-2xl font-bold">
+                <h3 className="nunito bg-[#E0F600] text-black px-5 py-1 mt-5 inline-block rounded-3xl font-bold md:text-xl">
                     Consulta gratuita aquí
                 </h3>
             </div>
-
+            <div className="absolute bottom-0 left-0 w-full h-1/3 bg-linear-to-t from-black via-black/40 to-transparent"></div>
         </div>
     )
 }

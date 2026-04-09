@@ -1,12 +1,14 @@
 // import React from 'react';
 import InicieComponent from '../components/InicieComponent/InicieComponent.tsx';
 import DataComponent from "../components/DataComponent/DataComponent.tsx";
+import OptionsComponent from '../components/OptionsComponent/OptionsComponent.tsx';
 
 function homePage() {
     return(
         <>
             <InicieComponent></InicieComponent>
             <DataComponent></DataComponent>
+            <OptionsComponent></OptionsComponent>
         </>
     )
 ;}

@@ -29,7 +29,7 @@ function DataComponent() {
     const printQualifications = () => {
         return qualifications.map((qualification, indice)=>{
             return(
-                <div key={indice} className={`${visible ? "fade-down flex flex-col md:flex-row justify-center items-center gap-3 md:gap-2 py-5 md:px-4 bg-gray-900/50  w-full rounded-4xl" : ""} hover:-translate-y-0.5 hover:border hover:border-gray-600/90 hover:shadow-gray-900/50 hover:shadow-lg transition-transform duration-100 select-none cursor-pointer`}
+                <div key={indice} className={`${visible ? "fade-down flex flex-col md:flex-row justify-center items-center gap-3 md:gap-2 py-5 md:px-4 bg-gray-900/50  w-full rounded-4xl" : ""} hover:-translate-y-0.5 hover:outline hover:outline-2 hover:outline-gray-600/90 hover:shadow-gray-900/50 hover:shadow-lg transition-transform duration-100 select-none cursor-pointer`}
                 style={{ animationDelay: `${indice * 0.3}s`}}>
                     <div className="p-5 md:p-3 border border-black rounded-full bg-[#E0F600]">
                         <img src={qualification.icon} alt="" className="w-12"/>

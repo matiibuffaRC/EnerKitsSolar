@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 
 // Import de components
 import HeaderComponent from './components/HeaderComponent/HeaderComponent.tsx';
-
+import FooterComponent from "./components/FooterComponent/FooterComponent.tsx";
 
 
 // Import de pages
@@ -18,6 +18,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
 
       </Routes>
+      <FooterComponent></FooterComponent>
     </>
   )
 }

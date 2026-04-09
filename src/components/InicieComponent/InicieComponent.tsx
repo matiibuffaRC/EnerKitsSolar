@@ -14,7 +14,7 @@ function InicieComponent() {
             {/* Contenido */}
             <div className="fade-down relative z-10 text-start md:text-center text-white px-4 md:px-4 flex flex-col items-start md:items-center">
                 <h2 className=" nunito text-4xl md:px-10 mb-2 md:text-5xl font-bold md:hidden">
-                    El sol y Enerkits trabajan para vos
+                    El sol y <span className="text-[#E0F600]">Enerkits</span> trabajan para vos
                 </h2>
                 <h2 className="hidden nunito text-4xl md:px-10 mb-2 md:text-5xl font-bold md:block">
                     El sol trabaja para vos

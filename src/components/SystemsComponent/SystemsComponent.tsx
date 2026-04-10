@@ -26,22 +26,31 @@ function SystemsComponent() {
         }, []);
     // Funciones
     const printSystems = () => {
-        return options.map((option,indice) => {
-            return(
-                <div key={option.id} className={`flex-1 transform transition-all duration-700 shadow-lg shadow-gray-800/30 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"} hover:-translate-y-2`}
-                    style={{ transitionDelay: `${indice * 0.3}s` }}>
+    return options.map((option, indice) => {
+        return (
+            <div key={option.id} className={`flex-1 transition-all duration-300 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}style={{ transitionDelay: `${indice * 0.15}s`}}>
+
+                <div className=" h-full cursor-pointer rounded-xl border border-gray-600/10 shadow-lg shadow-gray-800/30 transform transition-transform duration-300 ease-in-out     hover:-translate-y-2 hover:shadow-xl ">
                     <div className="flex items-center justify-center rounded">
-                        <img src={option.img} alt={`${option.title} image`} className=""/>
+                        <img src={option.img} alt={`${option.title} image`}/>
                     </div>
-                    <div className="text-white py-5">
-                        <h2 className="nunito text-[#E0F600] text-2xl font-bold">{option.title}</h2>
-                        <h3 className="pt-sans text-gray-300 text-lg">{option.subtitle}</h3>
-                        <h4 className="text-md pr-2">{option.data}</h4>
+                    <div className="text-white py-5 pl-2">
+                        <h2 className="nunito text-[#E0F600] text-2xl font-bold">
+                            {option.title}
+                        </h2>
+
+                        <h3 className="pt-sans text-gray-300 text-lg">
+                            {option.subtitle}
+                        </h3>
+                        <h4 className="text-md pr-2">
+                            {option.data}
+                        </h4>
                     </div>
                 </div>
-            )
-        })
-    }    
+            </div>
+        );
+    });
+};   
     return (
         <>
             <section className="bg-black flex flex-col items-center pb-50">

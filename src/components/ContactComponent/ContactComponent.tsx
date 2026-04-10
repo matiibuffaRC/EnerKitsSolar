@@ -6,7 +6,7 @@ import mailIcon from "../../assets/icons/email.png";
 function ContactComponent() {
     return (
         <>
-            <section className="bg-black text-white pb-50 px-5">
+            <section className="bg-black text-white py-50 px-5">
                 <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
                     <div className="bg-gray-900/20 p-4 md:p-8 rounded-2xl shadow-lg">
                         <h2 className="text-3xl font-bold mb-6 text-[#E0F600]">Contactame</h2>

@@ -1,5 +1,6 @@
 // import React from 'react';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Logo from "../../assets/imgs/EnerkitsLogo.png"
 
 function HeaderComponent() {
@@ -31,11 +32,11 @@ function HeaderComponent() {
                             <img src={Logo} alt="Enerkits logo" className='h-7'/>
                         </div>
                         <ul className='h-full flex flex-col items-start gap-4 p-5 text-[1.2rem]'>
-                            <li>Inicio</li>
-                            <li>Nosotros</li>
-                            <li>Sistemas</li>
-                            <li>Contacto</li>
-                            <li className="text-[#E0F600] font-bold">Consulta gratis</li>
+                            <Link to="/#inicio"><li className='cursor-pointer'>Inicio</li></Link>
+                            <Link to="/#nosotros"><li className='cursor-pointer'>Nosotros</li></Link>
+                            <Link to="/products"><li className='cursor-pointer'>Sistemas</li></Link>
+                            <Link to="/#contacto"><li className='cursor-pointer'>Contacto</li></Link>
+                            <Link to=""><li className="text-[#E0F600] font-bold">Consulta gratis</li></Link>
                         </ul>
                     </nav>
                     <div className={`absolute inset-0 h-screen w-full bg-black/50 z-0 transition-opacity duration-300 md:hidden ${!openMenuMobile ? "opacity-0 hidden" : "opacity-100"}`} onClick={()=>{handleClickMenuMobile()}}>
@@ -44,10 +45,10 @@ function HeaderComponent() {
                     {/* Menú que aparece en resoluciones medianas y grandes */}
                     <nav className='hidden md:block'>
                         <ul className=' flex flex-row gap-5 items-center font-bold'>
-                            <li>Inicio</li>
-                            <li>Nosotros</li>
-                            <li>Sistemas</li>
-                            <li>Contacto</li>
+                            <Link to="/#inicio"><li className='cursor-pointer'>Inicio</li></Link>
+                            <Link to="/#nosotros"><li className='cursor-pointer'>Nosotros</li></Link>
+                            <Link to="/products"><li className='cursor-pointer'>Sistemas</li></Link>
+                            <Link to="/#contacto"><li className='cursor-pointer'>Contacto</li></Link>
                             <li className="bg-[#E0F600] text-black px-4 py-1 rounded-2xl">Consulta gratis</li>
                         </ul>
                     </nav>

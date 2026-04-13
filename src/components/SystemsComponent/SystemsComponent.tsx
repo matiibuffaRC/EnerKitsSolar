@@ -2,7 +2,7 @@
 import { options } from "../../assets/data/systemsOptions.tsx";
 import { useEffect, useRef, useState } from "react";
 
-function SystemsComponent() {
+function SystemsComponent({ id }: { id?: string }) {
     // Variables de estado
     const sectionRef = useRef(null);
         const [visible, setVisible] = useState(false);
@@ -53,7 +53,7 @@ function SystemsComponent() {
 };   
     return (
         <>
-            <section className="bg-black flex flex-col items-center pb-50">
+            <section id={id} className="bg-black flex flex-col items-center pb-50">
                 <div className="p-5 md:max-w-5xl lg:max-w-7xl">
                     <h2 className="nunito text-[#E0F600] text-2xl font-bold py-5">Sistemas de instalación</h2>
                     <div ref={sectionRef} className="flex flex-col gap-10 md:gap-5 md:flex-row">

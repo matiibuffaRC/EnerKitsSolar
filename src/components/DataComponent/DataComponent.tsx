@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { qualifications } from "../../assets/data/data.tsx";
 import '../../index.css';
 
-function DataComponent() {
+function DataComponent({ id }: { id?: string }) {
     // Variables de estado
     const sectionRef = useRef(null);
     const [visible, setVisible] = useState(false);
@@ -42,7 +42,7 @@ function DataComponent() {
 
     return (
         <>
-            <section ref={sectionRef} className="bg-black text-white py-50 text-center flex flex-col items-center">
+            <section id={id} ref={sectionRef} className="bg-black text-white py-50 text-center flex flex-col items-center">
                 <div className="flex flex-col justify-center items-center font-bold md:text-md md:max-w-150 lg:max-w-200">
                     <h2 className="nunito text-2xl md:text-2xl lg:text-4xl px-4">Nuestro objetivo es <span className="bg-[#E0F600] px-3 rounded-3xl text-black font-bold">simple</span></h2>
                     <h2 className="nunito text-2xl md:text-2xl lg:text-4xl px-2">ayudarte a generar tu propia energía verde, <span className="text-[#E0F600]">reducir costo</span> y construir un futuro más <span className="text-[#E0F600]">sostenible y limpio.</span></h2>

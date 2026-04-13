@@ -3,14 +3,14 @@ import phoneIcon from "../../assets/icons/phone-call.png";
 import ubiIcon from "../../assets/icons/pin.png";
 import mailIcon from "../../assets/icons/email.png";
 
-function ContactComponent() {
+function ContactComponent({ id }: { id?: string }) {
     return (
         <>
-            <section className="bg-black text-white py-50 px-5">
+            <section id={id} className="bg-black text-white py-50 px-5">
                 <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
                     <div className="bg-gray-900/20 p-4 md:p-8 rounded-2xl shadow-lg">
                         <h2 className="text-3xl font-bold mb-6 text-[#E0F600]">Contactame</h2>
-                        <form className="flex flex-col gap-4">
+                        <form id="formulario" className="flex flex-col gap-4">
                             <input type="text" placeholder="John Doe" className="p-3 rounded-lg bg-black border border-zinc-700 focus:border-[#E0F600] outline-none transition"/>
                             <input type="email" placeholder="tucorreo@gmail.com" className="p-3 rounded-lg bg-black border border-zinc-700 focus:border-[#E0F600] outline-none transition"/>
                             <textarea  placeholder="Tu mensaje" className="p-3 rounded-lg bg-black border border-zinc-700 focus:border-[#E0F600] outline-none transition resize-none"></textarea>

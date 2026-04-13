@@ -9,12 +9,12 @@ import WorkingMethod from '../components/WorkingMethod/WorkingMethod.tsx';
 function homePage() {
     return(
         <>
-            <InicieComponent></InicieComponent>
-            <DataComponent></DataComponent>
+            <InicieComponent id="inicio"></InicieComponent>
+            <DataComponent id="nosotros"></DataComponent>
             <OptionsComponent></OptionsComponent>
-            <SystemsComponent></SystemsComponent>
+            <SystemsComponent id="sistemas"></SystemsComponent>
             <WorkingMethod></WorkingMethod>
-            <ContactComponent></ContactComponent>
+            <ContactComponent id="contacto"></ContactComponent>
         </>
     )
 ;}

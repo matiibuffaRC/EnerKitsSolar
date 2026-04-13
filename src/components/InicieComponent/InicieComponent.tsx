@@ -1,9 +1,9 @@
 // import React from 'react';
 
 
-function InicieComponent() {
+function InicieComponent({ id }: { id?: string }) {
     return (
-        <section className="bg-[url('/bg-img-InicieComponent.jpeg')] bg-cover bg-center h-screen w-full relative flex flex-col items-center justify-center">
+        <section id={id} className="bg-[url('/bg-img-InicieComponent.jpeg')] bg-cover bg-center h-screen w-full relative flex flex-col items-center justify-center">
 
             {/* Overlay oscuro */}
             <div className="absolute inset-0 bg-black/30"></div>

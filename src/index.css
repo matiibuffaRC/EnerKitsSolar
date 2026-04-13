@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+*{
+    behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 100px;
+}
+
 .nunito {
     font-family: "Nunito", sans-serif;
 }

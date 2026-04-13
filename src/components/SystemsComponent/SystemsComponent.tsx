@@ -32,7 +32,7 @@ function SystemsComponent({ id }: { id?: string }) {
 
                 <div className=" h-full cursor-pointer rounded-xl border border-gray-600/10 shadow-lg shadow-gray-800/30 transform transition-transform duration-300 ease-in-out     hover:-translate-y-2 hover:shadow-xl ">
                     <div className="flex items-center justify-center rounded">
-                        <img src={option.img} alt={`${option.title} image`}/>
+                        <img src={option.img} alt={`Imagen de ${option.title}`}/>
                     </div>
                     <div className="text-white py-5 pl-2">
                         <h2 className="nunito text-[#E0F600] text-2xl font-bold">

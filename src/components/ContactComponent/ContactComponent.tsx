@@ -33,7 +33,7 @@ function ContactComponent({ id }: { id?: string }) {
                         <div className="flex flex-col gap-4">
                             <a href="#" className="flex items-center gap-3 group">
                                 <div className="p-2 flex items-center justify-center bg-[#E0F600] rounded-full group-hover:bg-[#E0F600] transition">
-                                    <img src={phoneIcon} alt="Phone icon" className="w-5  h-5"/>
+                                    <img src={phoneIcon} alt="Ícono de teléfono" className="w-5  h-5"/>
                                 </div>
                                 <div className="flex flex-col">
                                     <span className="nunito text-[#E0F600] font-bold">Teléfono</span>
@@ -43,7 +43,7 @@ function ContactComponent({ id }: { id?: string }) {
 
                             <a href="#" className="flex items-center gap-3 group">
                                 <div className="p-2 flex items-center justify-center bg-[#E0F600] rounded-full group-hover:bg-[#E0F600] transition">
-                                    <img src={mailIcon} alt="Phone icon" className="w-5 h-5"/>
+                                    <img src={mailIcon} alt="Ícono de email" className="w-5 h-5"/>
                                 </div>
                                 <div className="flex flex-col">
                                     <span className="nunito text-[#E0F600] font-bold">Email</span>
@@ -53,7 +53,7 @@ function ContactComponent({ id }: { id?: string }) {
 
                             <a href="#" className="flex items-center gap-3 group">
                                 <div className="p-2 flex items-center justify-center bg-[#E0F600] rounded-full group-hover:bg-[#E0F600] transition">
-                                    <img src={ubiIcon} alt="Phone icon" className="w-5 h-5"/>
+                                    <img src={ubiIcon} alt="Ícono de ubicación" className="w-5 h-5"/>
                                 </div>
                                 <div className="flex flex-col">
                                     <span className="nunito text-[#E0F600] font-bold">Ubicación</span>

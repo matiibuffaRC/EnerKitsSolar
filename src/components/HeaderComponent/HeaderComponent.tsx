@@ -36,7 +36,7 @@ function HeaderComponent() {
                             <Link to="/#nosotros"><li className='cursor-pointer'>Nosotros</li></Link>
                             <Link to="/products"><li className='cursor-pointer'>Sistemas</li></Link>
                             <Link to="/#contacto"><li className='cursor-pointer'>Contacto</li></Link>
-                            <Link to=""><li className="text-[#E0F600] font-bold">Consulta gratis</li></Link>
+                            <Link to=""><li className="text-[#E0F600] font-bold cursor-pointer">Consulta gratis</li></Link>
                         </ul>
                     </nav>
                     <div className={`absolute inset-0 h-screen w-full bg-black/50 z-0 transition-opacity duration-300 md:hidden ${!openMenuMobile ? "opacity-0 hidden" : "opacity-100"}`} onClick={()=>{handleClickMenuMobile()}}>
@@ -45,11 +45,11 @@ function HeaderComponent() {
                     {/* Menú que aparece en resoluciones medianas y grandes */}
                     <nav className='hidden md:block'>
                         <ul className=' flex flex-row gap-5 items-center font-bold'>
-                            <Link to="/#inicio"><li className='cursor-pointer'>Inicio</li></Link>
-                            <Link to="/#nosotros"><li className='cursor-pointer'>Nosotros</li></Link>
-                            <Link to="/products"><li className='cursor-pointer'>Sistemas</li></Link>
-                            <Link to="/#contacto"><li className='cursor-pointer'>Contacto</li></Link>
-                            <li className="bg-[#E0F600] text-black px-4 py-1 rounded-2xl">Consulta gratis</li>
+                            <Link to="/#inicio"><li className='cursor-pointer nav-link'>Inicio</li></Link>
+                            <Link to="/#nosotros"><li className='cursor-pointer nav-link'>Nosotros</li></Link>
+                            <Link to="/products"><li className='cursor-pointer nav-link'>Sistemas</li></Link>
+                            <Link to="/#contacto"><li className='cursor-pointer nav-link'>Contacto</li></Link>
+                            <li className="bg-[#E0F600] text-black px-4 py-1 rounded-2xl cursor-pointer">Consulta gratis</li>
                         </ul>
                     </nav>
                 </div>

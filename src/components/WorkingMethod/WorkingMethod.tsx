@@ -8,8 +8,8 @@ import lorryIcon from "../../assets/icons/lorry-svgrepo-com.svg";
 function WorkingMethod() {
     return (
         <>
-            <section className="bg-[#E0F600] p-5 pb-10">
-                <div>
+            <section className="bg-[#111] p-5 pb-10">
+                <div className="text-white">
                     <div className="m-auto pt-5 pb-5 md:pb-10 md:max-w-5xl lg:max-w-7xl">
                         <h2 className="nunito font-bold text-2xl">Nuestro proceso de trabajo</h2>
                         <h2 className="nunito font-bold text-md">Por un futuro verde y sustentable</h2>
@@ -29,7 +29,7 @@ function WorkingMethod() {
                             </div>
                             {/* Information-item-1 */}
                             <div className="w-70 md:w-65 md:text-center px-2 h-26">
-                                <h2 className="nunito text-xl font-bold">Consultá</h2>
+                                <h2 className="nunito text-xl font-bold text-[#e0f600]">Consultá</h2>
                                 <h3 className="pt-sans">Hablanos y preguntanos para sacarte todas tus dudas!</h3>
                             </div>
                         </div>
@@ -47,7 +47,7 @@ function WorkingMethod() {
                             </div>
                             {/* Information-item-1 */}
                             <div className="w-70 md:w-65 md:text-center px-2 h-26">
-                                <h2 className="nunito text-xl font-bold">Propuesto</h2>
+                                <h2 className="nunito text-xl font-bold text-[#e0f600]">Propuesto</h2>
                                 <h3 className="pt-sans">Buscamos el mejor paquete adaptado a tus necesidades y presupuesto.</h3>
                             </div>
                         </div>
@@ -65,7 +65,7 @@ function WorkingMethod() {
                             </div>
                             {/* Information-item-1 */}
                             <div className="w-70 md:w-65 md:text-center px-2 h-26">
-                                <h2 className="nunito text-xl font-bold">Cotización</h2>
+                                <h2 className="nunito text-xl font-bold text-[#e0f600]">Cotización</h2>
                                 <h3 className="pt-sans">Te elaboramos un presupuesto sin costo de acuerdo al sistema que más se adapte a tus necesidades.</h3>
                             </div>
                         </div>
@@ -82,7 +82,7 @@ function WorkingMethod() {
                             </div>
                             {/* Information-item-1 */}
                             <div className="w-70 md:w-65 md:text-center px-2 h-26">
-                                <h2 className="nunito text-xl font-bold">Envíos</h2>
+                                <h2 className="nunito text-xl font-bold text-[#e0f600]">Envíos</h2>
                                 <h3 className="pt-sans">Enviamos tus productos en un tiempo máximo de 7 días hábiles</h3>
                             </div>
                         </div>

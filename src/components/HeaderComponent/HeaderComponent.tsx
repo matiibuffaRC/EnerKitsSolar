@@ -32,24 +32,27 @@ function HeaderComponent() {
                             <img src={Logo} alt="Enerkits logo" className='h-7'/>
                         </div>
                         <ul className='h-full flex flex-col items-start gap-4 p-5 text-[1.2rem]'>
-                            <Link to="/#inicio"><li className='cursor-pointer'>Inicio</li></Link>
-                            <Link to="/#nosotros"><li className='cursor-pointer'>Nosotros</li></Link>
-                            <Link to="/products"><li className='cursor-pointer'>Sistemas</li></Link>
-                            <Link to="/#contacto"><li className='cursor-pointer'>Contacto</li></Link>
-                            <Link to=""><li className="text-[#E0F600] font-bold cursor-pointer">Consulta gratis</li></Link>
+                            <li className='cursor-pointer'><Link to="/#inicio" onClick={()=>{handleClickMenuMobile()}}>Inicio</Link></li>
+                            <li className='cursor-pointer'><Link to="/#nosotros" onClick={()=>{handleClickMenuMobile()}}>Nosotros</Link></li>
+                            <li className='cursor-pointer'><Link to="/products" onClick={()=>{handleClickMenuMobile()}}>Sistemas</Link></li>
+                            <li className='cursor-pointer'><Link to="/#contacto" onClick={()=>{handleClickMenuMobile()}}>Contacto</Link></li>
+                            <li className="text-[#E0F600] font-bold cursor-pointer"><Link to="" onClick={()=>{handleClickMenuMobile()}}>Consulta gratis</Link></li>
                         </ul>
                     </nav>
+
                     <div className={`absolute inset-0 h-screen w-full bg-black/50 z-0 transition-opacity duration-300 md:hidden ${!openMenuMobile ? "opacity-0 hidden" : "opacity-100"}`} onClick={()=>{handleClickMenuMobile()}}>
                         {/* Overlay */}
                     </div>
-                    {/* Menú que aparece en resoluciones medianas y grandes */}
+
                     <nav className='hidden md:block'>
                         <ul className=' flex flex-row gap-5 items-center font-bold'>
-                            <Link to="/#inicio"><li className='cursor-pointer nav-link'>Inicio</li></Link>
-                            <Link to="/#nosotros"><li className='cursor-pointer nav-link'>Nosotros</li></Link>
-                            <Link to="/products"><li className='cursor-pointer nav-link'>Sistemas</li></Link>
-                            <Link to="/#contacto"><li className='cursor-pointer nav-link'>Contacto</li></Link>
-                            <li className="bg-[#E0F600] text-black px-4 py-1 rounded-2xl cursor-pointer">Consulta gratis</li>
+                            <li className='cursor-pointer nav-link'><Link to="/#inicio">Inicio</Link></li>
+                            <li className='cursor-pointer nav-link'><Link to="/#nosotros">Nosotros</Link></li>
+                            <li className='cursor-pointer nav-link'><Link to="/products">Sistemas</Link></li>
+                            <li className='cursor-pointer nav-link'><Link to="/#contacto">Contacto</Link></li>
+                            <li className="bg-[#E0F600] text-black px-4 py-1 rounded-2xl cursor-pointer">
+                                <Link to="">Consulta gratis</Link>
+                            </li>
                         </ul>
                     </nav>
                 </div>

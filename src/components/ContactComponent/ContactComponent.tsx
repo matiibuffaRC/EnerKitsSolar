@@ -14,8 +14,8 @@ function ContactComponent() {
                             <input type="text" placeholder="John Doe" className="p-3 rounded-lg bg-black border border-zinc-700 focus:border-[#E0F600] outline-none transition"/>
                             <input type="email" placeholder="tucorreo@gmail.com" className="p-3 rounded-lg bg-black border border-zinc-700 focus:border-[#E0F600] outline-none transition"/>
                             <textarea  placeholder="Tu mensaje" className="p-3 rounded-lg bg-black border border-zinc-700 focus:border-[#E0F600] outline-none transition resize-none"></textarea>
-                            <button type="submit" className="mt-2 border border-[#E0F600] text-[#E0F600] py-3 rounded-lg font-semibold relative overflow-hidden group">
-                                <span className="relative z-10 group-hover:text-black transition duration-300 cursor-pointer">
+                            <button type="submit" className="cursor-pointer mt-2 border border-[#E0F600] text-[#E0F600] py-3 rounded-lg font-semibold relative overflow-hidden group">
+                                <span className="relative z-10 group-hover:text-black transition duration-300">
                                     Enviar mensaje
                                 </span>
                                 <span className="absolute inset-0 bg-[#E0F600] translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>

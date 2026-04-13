@@ -14,7 +14,7 @@ function HeaderComponent() {
 
     return (
         <div>
-            <div className="nunito text-[white] h-15 fixed left-1/2 -translate-x-1/2 w-full z-40 bg-white/10 backdrop-blur-lg border border-white/20 md:rounded-full md:w-175 md:top-3">
+            <div className="nunito text-[white] h-15 fixed left-1/2 -translate-x-1/2 w-full z-400 bg-white/10 backdrop-blur-lg border border-white/20 md:rounded-full md:w-175 md:top-3">
                 <div className="flex flex-row px-5 justify-between items-center h-full">
                     <div> {/* Parte del logo */}
                         <div>
@@ -33,6 +33,7 @@ function HeaderComponent() {
                         <ul className='h-full flex flex-col items-start gap-4 p-5 text-[1.2rem]'>
                             <li>Inicio</li>
                             <li>Nosotros</li>
+                            <li>Sistemas</li>
                             <li>Contacto</li>
                             <li className="text-[#E0F600] font-bold">Consulta gratis</li>
                         </ul>
@@ -45,6 +46,7 @@ function HeaderComponent() {
                         <ul className=' flex flex-row gap-5 items-center font-bold'>
                             <li>Inicio</li>
                             <li>Nosotros</li>
+                            <li>Sistemas</li>
                             <li>Contacto</li>
                             <li className="bg-[#E0F600] text-black px-4 py-1 rounded-2xl">Consulta gratis</li>
                         </ul>

@@ -8,6 +8,7 @@ import FooterComponent from "./components/FooterComponent/FooterComponent.tsx";
 
 // Import de pages
 import HomePage from './pages/HomePage.tsx';
+import ProductsPage from './pages/ProductsPage.tsx';
 
 function App() {
 
@@ -16,7 +17,7 @@ function App() {
       <HeaderComponent></HeaderComponent>
       <Routes>
         <Route path="/" element={<HomePage />} />
-
+        <Route path="/products" element={<ProductsPage />} />
       </Routes>
       <FooterComponent></FooterComponent>
     </>

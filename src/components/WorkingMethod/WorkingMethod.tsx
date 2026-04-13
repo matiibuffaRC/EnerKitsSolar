@@ -8,9 +8,9 @@ import lorryIcon from "../../assets/icons/lorry-svgrepo-com.svg";
 function WorkingMethod() {
     return (
         <>
-            <section className="bg-[#E0F600] p-5">
+            <section className="bg-[#E0F600] p-5 pb-10">
                 <div>
-                    <div className="m-auto pt-5 pb-10 md:max-w-5xl lg:max-w-7xl">
+                    <div className="m-auto pt-5 pb-5 md:pb-10 md:max-w-5xl lg:max-w-7xl">
                         <h2 className="nunito font-bold text-2xl">Nuestro proceso de trabajo</h2>
                         <h2 className="nunito font-bold text-md">Por un futuro verde y sustentable</h2>
                     </div>

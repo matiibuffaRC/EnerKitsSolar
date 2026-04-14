@@ -5,6 +5,14 @@ const productsData = [
     { id: 2, name: "Producto 2", category: "Tecnología", price: 200 },
     { id: 3, name: "Producto 3", category: "Ropa", price: 150 },
     { id: 4, name: "Producto 4", category: "Accesorios", price: 80 },
+    { id: 5, name: "Producto 5", category: "Ropa", price: 100 },
+    { id: 6, name: "Producto 6", category: "Tecnología", price: 200 },
+    { id: 7, name: "Producto 7", category: "Ropa", price: 150 },
+    { id: 8, name: "Producto 8", category: "Accesorios", price: 80 },
+    { id: 9, name: "Producto 9", category: "Ropa", price: 100 },
+    { id: 10, name: "Producto 10", category: "Tecnología", price: 200 },
+    { id: 11, name: "Producto 11", category: "Ropa", price: 150 },
+    { id: 12, name: "Producto 12", category: "Accesorios", price: 80 },
 ];
 
 const categories = ["Todos", "Ropa", "Tecnología", "Accesorios"];
@@ -40,7 +48,7 @@ function ProductsComponent() {
                         className={`
                         fixed top-0 left-0 h-screen w-64 bg-zinc-900 p-6 z-50
                         transform transition-transform duration-300
-                        ${menuOpen ? "translate-x-0" : "-translate-x-full"} md:static md:translate-x-0 md:w-1/4 md:h-[calc(100dvh-150px)]`}>
+                        ${menuOpen ? "translate-x-0" : "-translate-x-full"} md:sticky top-26 md:translate-x-0 md:w-1/4 md:h-[calc(100dvh-150px)]`}>
                         {/* Header mobile */}
                         <div className="flex justify-between items-center mb-4 md:hidden">
                             <h3 className="text-[#E0F600] font-bold">

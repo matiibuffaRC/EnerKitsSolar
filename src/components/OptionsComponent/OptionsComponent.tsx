@@ -1,5 +1,7 @@
 // import React from 'react';
 import { options } from "../../assets/data/options.tsx";
+import { Link } from 'react-router-dom';
+
 
 function OptionsComponent() {
     
@@ -14,14 +16,14 @@ function OptionsComponent() {
                             <h2 className="nunito text-2xl md:text-4xl font-bold">{option.title}</h2>
                             <h3 className="pt-sans md:text-md text-gray-300">{option.text}</h3>
                             <div className="my-3 md:my-5">
-                                <a href="#" className="relative overflow-hidden rounded-full border-2 border-[#E0F600] px-4 py-2 text-white group inline-block" >
+                                <Link to={option.url} className="relative overflow-hidden rounded-full border-2 border-[#E0F600] px-4 py-2 text-white group inline-block" >
                                     <span className="relative z-10 transition-colors duration-300 group-hover:text-black font-bold">
                                         Ver más
                                     </span>
                                     <span className="absolute -inset-px w-0 bg-[#E0F600] transition-all duration-300 ease-in-out group-hover:w-[calc(100%+2px)] rounded-full">
                                         {/*  */}
                                     </span>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                         <div>
@@ -44,7 +46,7 @@ function OptionsComponent() {
                             <h2 className="nunito text-2xl md:text-4xl font-bold">Independencia <span className="text-[#E0F600]">solar</span></h2>
                             <h3 className="pt-sans md:text-md text-gray-200 text-center">Dejá de comprar electricidad y empezá a venderla. Te asersoramos sin compromiso.</h3>
                             <div className="my-3 md:my-5">
-                                <a href="#" className="relative overflow-hidden rounded-full border border-[#E0F600] px-4 py-2 text-[#E0F600] group inline-block" >
+                                <a href="https://wa.me/5493564507240" target="__blank" className="relative overflow-hidden rounded-full border border-[#E0F600] px-4 py-2 text-[#E0F600] group inline-block" >
                                     <span className="relative z-10 transition-colors duration-300 group-hover:text-black font-bold">
                                         Solicitar consulta gratuita
                                     </span>

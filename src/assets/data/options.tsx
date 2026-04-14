@@ -10,7 +10,8 @@ type Options = {
     title: string,
     text: string,
     img: string,
-    background:string
+    background:string,
+    url: string
 }
 
 export const options: Options[] = [
@@ -19,12 +20,14 @@ export const options: Options[] = [
         title: "Kits solares para tu hogar",
         text: "Energía real para tu casa y ahorro para vos.",
         img: img1,
-        background: card1
+        background: card1,
+        url: "/#products"
     },{
         id: 2,
         title: "Plantas fotovoltaicas",
         text: "Proyectos solares a gran escala, llave en mano.",
         img: img2,
-        background: card2
+        background: card2,
+        url: "/#products"
     }
 ]

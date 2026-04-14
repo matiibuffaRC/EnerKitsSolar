@@ -26,7 +26,7 @@ function InicieComponent({ id }: { id?: string }) {
                     Y nosotros también. Energía solar y asesoría experta para optimizar tu inversión en el futuro verde.
                 </h3>
                 <h3 className="nunito bg-[#E0F600] text-black px-5 py-1.5 mt-3 inline-block rounded-3xl font-bold text-lg md:text-xl cursor-pointer">
-                    Consulta gratuita aquí
+                    <a href="https://wa.me/5493564507240" target="__blank">Consulta gratuita aquí</a>
                 </h3>
             </div>
             <div className="absolute bottom-0 left-0 w-full h-1/3 bg-linear-to-t from-black via-black/40 to-transparent"></div>

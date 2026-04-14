@@ -6,6 +6,9 @@ import ubiIcon from "../../assets/icons/pin.png";
 import mailIcon from "../../assets/icons/email.png";
 // 
 
+import { Link } from 'react-router-dom';
+
+
 function FooterComponent() {
     return (
         <>
@@ -14,7 +17,7 @@ function FooterComponent() {
                     <div className="flex flex-col gap-1 md:justify-start h-full">
                         <h3 className="text-2xl text-center font-bold">Enerkits</h3>
                         <div className="flex flex-col gap-3">
-                            <a href="#" className="flex items-center gap-1 group pl-4">
+                            <a href="https://wa.me/5493564507240" target="__blank" className="flex items-center gap-1 group pl-4">
                                 <div className="p-1.5 flex items-center justify-center bg-gray-200 rounded-full group-hover:bg-gray-200 transition">
                                     <img src={phoneIcon} alt="Phone icon" className="w-2.5  h2.53"/>
                                 </div>
@@ -60,13 +63,13 @@ function FooterComponent() {
                         <h3 className="text-2xl font-bold ">Sistemas de instalación</h3>
                         <div className="flex flex-col items-center md:items-start gap-1">
                             <div className="pt-sans text-gray-200">
-                                <a href="#" title="Link to products" className="text-md">Sistemas on grid</a>
+                                <Link to="/products" title="Link to products" className="text-md">Sistemas on grid</Link>
                             </div>
                             <div className="pt-sans text-gray-200">
-                                <a href="#" title="Link to products" className="text-md">Sistemas off grid</a>
+                                <Link to="/products" title="Link to products" className="text-md">Sistemas off grid</Link>
                             </div>
                             <div className="pt-sans text-gray-200">
-                                <a href="#" title="Link to products" className="text-md">Sistemas hibridos</a>
+                                <Link to="/products" title="Link to products" className="text-md">Sistemas hibridos</Link>
                             </div>
                         </div>
                     </div>

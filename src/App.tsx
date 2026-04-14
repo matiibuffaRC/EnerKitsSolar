@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 // Import de components
 import HeaderComponent from './components/HeaderComponent/HeaderComponent.tsx';
 import FooterComponent from "./components/FooterComponent/FooterComponent.tsx";
-
+import WhatsappIcon from "./components/WhatsappIcon/WhatsappIcon.tsx"
 
 // Import de pages
 import HomePage from './pages/HomePage.tsx';
@@ -32,6 +32,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/products" element={<ProductsPage />} />
       </Routes>
+      <WhatsappIcon></WhatsappIcon>
       <FooterComponent></FooterComponent>
     </>
   )

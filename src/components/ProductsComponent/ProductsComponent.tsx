@@ -45,12 +45,13 @@ function ProductsComponent() {
                     
                     {/* Sidebar */}
                     <div
-                        className={`
-                        fixed top-0 left-0 h-screen w-64 bg-zinc-900 p-6 z-50
-                        transform transition-transform duration-300
-                        ${menuOpen ? "translate-x-0" : "-translate-x-full"} md:sticky top-26 md:translate-x-0 md:w-1/4 md:h-[calc(100dvh-150px)]`}>
+                        className={`fixed top-0 left-0 h-screen w-64 bg-zinc-900 p-6 z-50 transform transition-transform duration-300 ${menuOpen ? "translate-x-0" : "-translate-x-full"}
+                            md:sticky md:top-26 md:h-[calc(100vh-6rem)]
+                            md:translate-x-0 md:w-64 md:shrink-0
+                        `}
+                    >
                         {/* Header mobile */}
-                        <div className="flex justify-between items-center mb-4 md:hidden">
+                        <div className="flex justify-between items-center mb-4 md:hidden pt-12 md:pt-0">
                             <h3 className="text-[#E0F600] font-bold">
                                 Filtros
                             </h3>

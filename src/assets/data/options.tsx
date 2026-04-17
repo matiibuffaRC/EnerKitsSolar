@@ -21,13 +21,13 @@ export const options: Options[] = [
         text: "Energía real para tu casa y ahorro para vos.",
         img: img1,
         background: card1,
-        url: "/#products"
+        url: "/products"
     },{
         id: 2,
         title: "Plantas fotovoltaicas",
         text: "Proyectos solares a gran escala, llave en mano.",
         img: img2,
         background: card2,
-        url: "/#products"
+        url: "/products"
     }
 ]

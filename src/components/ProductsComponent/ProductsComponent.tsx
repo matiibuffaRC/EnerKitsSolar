@@ -1,21 +1,8 @@
 import { useState } from "react";
+import { productsData } from "../../assets/data/productsAndSystems";
 
-const productsData = [
-    { id: 1, name: "Producto 1", category: "Ropa", price: 100 },
-    { id: 2, name: "Producto 2", category: "Tecnología", price: 200 },
-    { id: 3, name: "Producto 3", category: "Ropa", price: 150 },
-    { id: 4, name: "Producto 4", category: "Accesorios", price: 80 },
-    { id: 5, name: "Producto 5", category: "Ropa", price: 100 },
-    { id: 6, name: "Producto 6", category: "Tecnología", price: 200 },
-    { id: 7, name: "Producto 7", category: "Ropa", price: 150 },
-    { id: 8, name: "Producto 8", category: "Accesorios", price: 80 },
-    { id: 9, name: "Producto 9", category: "Ropa", price: 100 },
-    { id: 10, name: "Producto 10", category: "Tecnología", price: 200 },
-    { id: 11, name: "Producto 11", category: "Ropa", price: 150 },
-    { id: 12, name: "Producto 12", category: "Accesorios", price: 80 },
-];
-
-const categories = ["Todos", "Ropa", "Tecnología", "Accesorios"];
+// 👉 nuevas categorías basadas en tus datos
+const categories = ["Todos", "Baterías", "Cables", "Conectores", "Sistemas", "Paneles"];
 
 function ProductsComponent() {
     const [selectedCategory, setSelectedCategory] = useState("Todos");
@@ -31,24 +18,30 @@ function ProductsComponent() {
     return (
         <section className="bg-black text-white min-h-screen px-6 relative">
             <div className="py-18 md:pt-25 max-w-6xl mx-auto">
+                
                 <button
                     onClick={() => setMenuOpen(true)}
                     className="md:hidden bg-[#E0F600] text-black w-full px-4 py-2 rounded-xl mb-4 font-semibold"
                 >
                     Filtrar
                 </button>
+
                 {menuOpen && (
-                    <div onClick={() => setMenuOpen(false)} className="fixed inset-0 bg-black/70 backdrop-blur-sm z-40"/>
+                    <div
+                        onClick={() => setMenuOpen(false)}
+                        className="fixed inset-0 bg-black/70 backdrop-blur-sm z-40"
+                    />
                 )}
 
                 <div className="flex gap-6 items-start">
                     
                     {/* Sidebar */}
                     <div
-                        className={`fixed top-0 left-0 h-screen w-64 bg-zinc-900 p-6 z-50 transform transition-transform duration-300 ${menuOpen ? "translate-x-0" : "-translate-x-full"}
-                            md:sticky md:top-26 md:h-[calc(100vh-6rem)]
-                            md:translate-x-0 md:w-64 md:shrink-0
-                        `}
+                        className={`fixed top-0 left-0 h-screen w-64 bg-zinc-900 p-6 z-50 transform transition-transform duration-300 ${
+                            menuOpen ? "translate-x-0" : "-translate-x-full"
+                        }
+                        md:sticky md:top-26 md:h-[calc(100vh-6rem)]
+                        md:translate-x-0 md:w-64 md:shrink-0`}
                     >
                         {/* Header mobile */}
                         <div className="flex justify-between items-center mb-4 md:hidden pt-12 md:pt-0">
@@ -76,7 +69,7 @@ function ProductsComponent() {
                                             setSelectedCategory(cat);
                                             setMenuOpen(false);
                                         }}
-                                        className={`w-full text-left px-3 py-2 rounded-lg transition
+                                        className={`w-full text-left px-3 py-2 rounded-lg transition hover:cursor-pointer
                                         ${
                                             selectedCategory === cat
                                                 ? "bg-[#E0F600] text-black"
@@ -97,10 +90,13 @@ function ProductsComponent() {
                                 key={product.id}
                                 className="bg-zinc-900 border border-zinc-700 rounded-2xl p-4 shadow-lg hover:scale-105 transition-transform duration-300"
                             >
-                                <div className="h-40 bg-zinc-800 rounded-xl mb-4 flex items-center justify-center">
-                                    <span className="text-zinc-500">
-                                        Imagen
-                                    </span>
+                                {/* 👉 imagen real */}
+                                <div className="h-40 bg-zinc-800 rounded-xl mb-4 overflow-hidden">
+                                    <img
+                                        src={product.image}
+                                        alt={product.name}
+                                        className="w-full h-full object-cover"
+                                    />
                                 </div>
 
                                 <h4 className="text-lg font-semibold">
@@ -118,6 +114,7 @@ function ProductsComponent() {
                             </div>
                         ))}
                     </div>
+
                 </div>
             </div>
         </section>

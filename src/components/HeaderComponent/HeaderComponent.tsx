@@ -15,11 +15,11 @@ function HeaderComponent() {
 
     return (
         <div className='relative'>
-            <div className="nunito text-[white] h-15 fixed left-1/2 -translate-x-1/2 w-full z-400 bg-white/10 backdrop-blur-lg border border-white/20 md:rounded-full md:w-175 md:top-3">
+            <div className="nunito text-[white] h-15 fixed left-1/2 -translate-x-1/2 w-full z-400 bg-white/10 backdrop-blur-lg border border-white/20 md:rounded-full md:w-175 md:top-3 md:py-8">
                 <div className="flex flex-row px-5 justify-between items-center h-full">
                     <div> {/* Parte del logo */}
                         <div>
-                            <img src={Logo} alt="Enerkits logo" className='h-5'/>
+                            <img src={Logo} alt="Enerkits logo" className='h-4.5'/>
                         </div>
                     </div>
                     <button aria-label="Abrir menú" onClick={handleClickMenuMobile} className="md:hidden relative w-5 h-5 flex items-center justify-center z-50" >
@@ -45,7 +45,7 @@ function HeaderComponent() {
                     </div>
 
                     <nav className='hidden md:block'>
-                        <ul className=' flex flex-row gap-5 items-center font-bold'>
+                        <ul className=' flex flex-row gap-5 items-center font-bold text-md'>
                             <li className='cursor-pointer nav-link'><Link to="/#inicio">Inicio</Link></li>
                             <li className='cursor-pointer nav-link'><Link to="/#nosotros">Nosotros</Link></li>
                             <li className='cursor-pointer nav-link'><Link to="/products">Sistemas</Link></li>

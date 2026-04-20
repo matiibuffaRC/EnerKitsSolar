@@ -84,14 +84,14 @@ function ProductsComponent() {
                     </div>
 
                     {/* Productos */}
-                    <div className="flex-1 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div className="flex-1 grid grid-cols-2 lg:grid-cols-3 gap-6">
                         {filteredProducts.map((product) => (
                             <div
                                 key={product.id}
-                                className="bg-zinc-900 border border-zinc-700 rounded-2xl p-4 shadow-lg hover:scale-105 transition-transform duration-300"
+                                className="bg-zinc-900 border border-zinc-700 p-1 shadow-lg hover:scale-105 transition-transform duration-300"
                             >
-                                {/* 👉 imagen real */}
-                                <div className="h-40 bg-zinc-800 rounded-xl mb-4 overflow-hidden">
+                                {/* Imagen */}
+                                <div className="h-44 md:h-40 bg-zinc-800  mb-4 overflow-hidden">
                                     <img
                                         src={product.image}
                                         alt={product.name}
@@ -99,15 +99,15 @@ function ProductsComponent() {
                                     />
                                 </div>
 
-                                <h4 className="text-lg font-semibold">
+                                <h4 className="text-sm md:text-lg font-semibold">
                                     {product.name}
                                 </h4>
-                                <p className="text-sm text-zinc-400">
+                                <p className="text-xs md:text-sm text-zinc-400">
                                     {product.category}
                                 </p>
 
                                 <div className="flex justify-between items-center mt-4">
-                                    <span className="text-[#E0F600] font-bold">
+                                    <span className="text-[#E0F600] font-bold text-sm md:text-base">
                                         ${product.price}
                                     </span>
                                 </div>

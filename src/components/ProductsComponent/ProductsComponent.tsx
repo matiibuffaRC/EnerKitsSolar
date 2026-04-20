@@ -37,11 +37,11 @@ function ProductsComponent() {
                     
                     {/* Sidebar */}
                     <div
-                        className={`fixed top-0 left-0 h-screen w-64 bg-zinc-900 p-6 z-50 transform transition-transform duration-300 ${
+                        className={`fixed top-0 left-0 h-screen w-64 bg-zinc-900 md:bg-black p-6 z-50 transform transition-transform duration-300 ${
                             menuOpen ? "translate-x-0" : "-translate-x-full"
                         }
-                        md:sticky md:top-26 md:h-[calc(100vh-6rem)]
-                        md:translate-x-0 md:w-64 md:shrink-0`}
+                        md:static md:top-26 md:h-full
+                        md:translate-x-0 md:w-45 lg:w-64 md:shrink-0`}
                     >
                         {/* Header mobile */}
                         <div className="flex justify-between items-center mb-4 md:hidden pt-12 md:pt-0">
@@ -84,22 +84,23 @@ function ProductsComponent() {
                     </div>
 
                     {/* Productos */}
-                    <div className="flex-1 grid grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div className="flex-1 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                         {filteredProducts.map((product) => (
                             <div
                                 key={product.id}
-                                className="bg-zinc-900 border border-zinc-700 p-1 shadow-lg hover:scale-105 transition-transform duration-300"
+                                className="bg-zinc-900 border rounded-md border-zinc-700 shadow-lg hover:scale-105 transition-transform duration-300"
                             >
                                 {/* Imagen */}
                                 <div className="h-44 md:h-40 bg-zinc-800  mb-4 overflow-hidden">
                                     <img
                                         src={product.image}
                                         alt={product.name}
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-full object-cover rounded-t-md"
                                     />
                                 </div>
 
-                                <h4 className="text-sm md:text-lg font-semibold">
+                                <div className="p-2 pt-0">
+                                    <h4 className="text-sm md:text-lg font-semibold">
                                     {product.name}
                                 </h4>
                                 <p className="text-xs md:text-sm text-zinc-400">
@@ -110,6 +111,7 @@ function ProductsComponent() {
                                     <span className="text-[#E0F600] font-bold text-sm md:text-base">
                                         ${product.price}
                                     </span>
+                                </div>
                                 </div>
                             </div>
                         ))}

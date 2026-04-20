@@ -39,7 +39,7 @@ export const productsData:ProductsAndSystems[] = [
     { id: 8, image: conectores2, name: "Conectores duplex", category: "Conectores", price: "8.500" },
     { id: 9, image: conectores3, name: "Conectores duplex", category: "Conectores", price: "7.000" },
 
-    { id: 10, image: hibridSystem, name: "Pack Hibrid System", category: "Sistemas", price: "4300000"},
+    { id: 10, image: hibridSystem, name: "Pack Hibrid System", category: "Sistemas", price: "4.300.000"},
     { id: 11, image: offGridSystem, name: "Pack Off Grid System", category: "Sistemas", price: "5.150.000"},
     { id: 12, image: onGridSystem, name: "Pack On Grid System", category: "Sistemas", price: "3.420.500" },
 

@@ -22,23 +22,23 @@ function FooterComponent() {
                         <a href="https://wa.me/5493564507240" rel='noopener' target="_blank"
                             className="flex items-center gap-3 group">
 
-                            <div className="p-2 bg-gray-300 rounded-full group-hover:bg-gray-700 transition">
+                            <div className="p-2 bg-gray-300 rounded-full group-hover:bg-[#E0F600] transition">
                                 <img src={phoneIcon} alt="Phone" className="w-4 h-4" />
                             </div>
 
-                            <span className="text-gray-300 group-hover:text-gray-700 transition">
+                            <a href="https://wa.me/5493564507240" target="_blank" className="text-gray-300 group-hover:text-[#E0F600] transition">
                                 Teléfono
-                            </span>
+                            </a>
                         </a>
 
                         <a href="#"
                             className="flex items-center gap-3 group">
 
-                            <div className="p-2 bg-gray-300 rounded-full group-hover:bg-gray-700 transition">
+                            <div className="p-2 bg-gray-300 rounded-full group-hover:bg-[#E0F600] transition">
                                 <img src={mailIcon} alt="Mail" className="w-4 h-4" />
                             </div>
 
-                            <span className="text-gray-300 group-hover:text-gray-700 transition">
+                            <span className="text-gray-300 group-hover:text-[#E0F600] transition">
                                 Email
                             </span>
                         </a>
@@ -46,11 +46,11 @@ function FooterComponent() {
                         <a href="#"
                             className="flex items-center gap-3 group">
 
-                            <div className="p-2 bg-gray-300 rounded-full group-hover:bg-gray-700 transition">
+                            <div className="p-2 bg-gray-300 rounded-full group-hover:bg-[#E0F600] transition">
                                 <img src={ubiIcon} alt="Ubicación" className="w-4 h-4" />
                             </div>
 
-                            <span className="text-gray-300 group-hover:text-gray-700 transition">
+                            <span className="text-gray-300 group-hover:text-[#E0F600] transition">
                                 Ubicación
                             </span>
                         </a>
@@ -62,10 +62,10 @@ function FooterComponent() {
                     <h3 className="text-2xl font-bold mb-4">Productos</h3>
 
                     <div className="flex flex-col gap-2">
-                        <Link to="/products" className="text-gray-300 hover:text-white transition">
+                        <Link to="/products" className="text-gray-300 hover:text-[#E0F600] transition">
                             Kits solares
                         </Link>
-                        <Link to="/products" className="text-gray-300 hover:text-white transition">
+                        <Link to="/products" className="text-gray-300 hover:text-[#E0F600] transition">
                             Plantas fotovoltaicas
                         </Link>
                     </div>
@@ -76,13 +76,13 @@ function FooterComponent() {
                     <h3 className="text-2xl font-bold mb-4">Sistemas</h3>
 
                     <div className="flex flex-col gap-2">
-                        <Link to="/products" className="text-gray-300 hover:text-white transition">
+                        <Link to="/products" className="text-gray-300 hover:text-[#E0F600] transition">
                             Sistemas on grid
                         </Link>
-                        <Link to="/products" className="text-gray-300 hover:text-white transition">
+                        <Link to="/products" className="text-gray-300 hover:text-[#E0F600] transition">
                             Sistemas off grid
                         </Link>
-                        <Link to="/products" className="text-gray-300 hover:text-white transition">
+                        <Link to="/products" className="text-gray-300 hover:text-[#E0F600] transition">
                             Sistemas híbridos
                         </Link>
                     </div>

@@ -6,7 +6,7 @@ import SystemsComponent from '../components/SystemsComponent/SystemsComponent.ts
 import ContactComponent from '../components/ContactComponent/ContactComponent.tsx';
 import WorkingMethod from '../components/WorkingMethod/WorkingMethod.tsx';
 import AboutUsComponent from '../components/AboutUsComponent/AboutUsComponent.tsx';
-
+import PlatformComponent from '../components/PlatformintegrationComponent/Platformintegration.tsx'
 
 function homePage() {
     return(
@@ -17,6 +17,7 @@ function homePage() {
             <SystemsComponent id="sistemas"></SystemsComponent>
             <WorkingMethod></WorkingMethod>
             <AboutUsComponent id="nosotros"></AboutUsComponent>
+            <PlatformComponent></PlatformComponent>
             <ContactComponent id="contacto"></ContactComponent>
         </>
     )

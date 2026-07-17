@@ -27,7 +27,7 @@ function HeaderComponent() {
                         <span className={`absolute w-5 h-0.5 bg-current rounded-full transition-all duration-300 ease-in-out ${openMenuMobile  ? "opacity-0 scale-x-0"  : "opacity-100 scale-x-100"} `}></span>
                         <span className={`absolute w-5 h-0.5 bg-current rounded-full transition-all duration-300 ease-in-out ${openMenuMobile  ? "-rotate-45 translate-y-0"  : "translate-y-1.5"} `}></span>
                     </button>
-                    <nav className={`fixed w-72 h-screen top-0 left-0 border border-gray-500 bg-zinc-900 backdrop-blur-md z-10 transition-transform duration-300 md:hidden ${openMenuMobile ? "-translate-x-0.5" : "-translate-x-[105%]"}`} >
+                    <nav className={`fixed w-72 h-screen top-0 left-0 border border-gray-500 bg-zinc-900 backdrop-blur-md z-10 transition-transform duration-300 md:hidden ${openMenuMobile ? "-translate-x-0.5" : "translate-x-[-105%]"}`} >
                         <div className='border-b border-gray-500 flex flex-row items-center justify-center p-7'>
                             <img src={Logo} alt="Enerkits logo" className='h-7'/>
                         </div>
@@ -36,7 +36,7 @@ function HeaderComponent() {
                             <li className='cursor-pointer'><Link to="/#nosotros" onClick={()=>{handleClickMenuMobile()}}>Nosotros</Link></li>
                             <li className='cursor-pointer'><Link to="/products" onClick={()=>{handleClickMenuMobile()}}>Sistemas</Link></li>
                             <li className='cursor-pointer'><Link to="/#contacto" onClick={()=>{handleClickMenuMobile()}}>Contacto</Link></li>
-                            <li className="text-[#E0F600] font-bold cursor-pointer"><Link to="" onClick={()=>{handleClickMenuMobile()}}>Consulta gratis</Link></li>
+                            <li className="text-[#E0F600] font-bold cursor-pointer"><a href="https://wa.me/5493564507240" target="_blank" onClick={()=>{handleClickMenuMobile()}}>Consulta gratis</a></li>
                         </ul>
                     </nav>
 
@@ -51,7 +51,7 @@ function HeaderComponent() {
                             <li className='cursor-pointer nav-link'><Link to="/products">Sistemas</Link></li>
                             <li className='cursor-pointer nav-link'><Link to="/#contacto">Contacto</Link></li>
                             <li className="bg-[#E0F600] text-black px-4 py-1 rounded-2xl cursor-pointer">
-                                <Link to="">Consulta gratis</Link>
+                                <a href="https://wa.me/5493564507240" target="_blank">Consulta gratis</a>
                             </li>
                         </ul>
                     </nav>

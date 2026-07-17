@@ -4,7 +4,7 @@ import checkIcon from "../../assets/icons/check-svgrepo-com.svg";
 
 function AboutUsComponent({ id }: { id?: string }) {
     return (
-        <section id={id} className="bg-black text-white p-5 pt-20">
+        <section id={id} className="bg-black text-white p-5 py-20">
             <div className="flex flex-col items-center gap-10 md:p-5">
                 <div>
                     <h2 className="text-center nunito text-xl md:text-3xl font-bold my-2.5">

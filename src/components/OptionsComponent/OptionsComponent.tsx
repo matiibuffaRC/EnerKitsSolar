@@ -39,7 +39,7 @@ function OptionsComponent() {
         <>
             <section className="bg-black flex flex-col items-center gap-5 p-5 pb-50">
                 {printOptions()}
-                <div className="w-full md:max-w-5xl lg:max-w-7xl bg-[url('/bg(opcion2)-img.jpg')] bg-cover bg-bottom flex flex-col items-center justify-center text-white rounded-4xl relative">
+                <div className="w-full md:max-w-5xl lg:max-w-7xl bg-[url('/bg-opcion2-img.jpg')] bg-cover bg-bottom flex flex-col items-center justify-center text-white rounded-4xl relative">
                     <div className="absolute z-10 inset-0 bg-[radial-gradient(circle_at_center,rgba(0,0,0,0.85)_0%,transparent_80%)]"></div>
                     <div className="flex flex-col z-20 w-full items-center justify-center p-15 gap-5 md:flex-row md:p-10 md:h-150">
                         <div className="max-w-90 pt-3 flex flex-col items-center justify-center">

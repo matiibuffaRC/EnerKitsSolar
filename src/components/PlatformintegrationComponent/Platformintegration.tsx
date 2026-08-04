@@ -7,10 +7,11 @@ import magentoLogo from "../../assets/icons/magento-2-logo.svg";
 interface Platform {
     name: string;
     logo: string;
+    className?: string;
 }
 
 const PLATFORMS: Platform[] = [
-    { name: "Tienda Nube", logo: tiendaNubeLogo },
+    { name: "Tienda Nube", logo: tiendaNubeLogo, className: "invert" },
     { name: "Mercado Libre", logo: mercadoLibreLogo },
     { name: "Shopify", logo: shopifyLogo },
     { name: "VTEX", logo: vtexLogo },
@@ -30,8 +31,12 @@ function PlatformIntegration() {
                         <div
                             key={platform.name}
                             className="flex flex-col items-center justify-center gap-2 opacity-80 hover:opacity-100 transition-all duration-300">
-                            <div className="h-10 md:h-12 lg:h-14 flex items-center justify-center grayscale cursor-pointer hover:grayscale-0 transition-all duration-300">
-                                <img src={platform.logo} alt={`Logo de ${platform.name}`} className="h-full w-auto object-contain" />
+                            <div className="h-10 md:h-12 lg:h-14 flex items-center justify-center grayscale cursor-pointer hover:grayscale-0 hover:scale-110 transition-all duration-300">
+                                <img
+                                    src={platform.logo}
+                                    alt={`Logo de ${platform.name}`}
+                                    className={`h-full w-auto object-contain ${platform.className ?? ""}`}
+                                />
                             </div>
                             <span className="pt-sans text-sm md:text-lg font-bold text-white">
                                 {platform.name}

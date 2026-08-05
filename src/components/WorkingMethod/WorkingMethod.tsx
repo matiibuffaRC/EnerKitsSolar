@@ -10,6 +10,8 @@ interface Step {
     description: string;
 }
 
+
+// Chequear esto
 const STEPS: Step[] = [
     { icon: questionIcon, title: "Consultá", description: "Hablanos y preguntanos para sacarte todas tus dudas!" },
     { icon: communityIcon, title: "Propuesto", description: "Buscamos el mejor paquete adaptado a tus necesidades y presupuesto." },
